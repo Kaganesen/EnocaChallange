@@ -1,45 +1,45 @@
-Gereklilikler :PostgreSQL, Postman.
+Requirements : PostgreSQL, Postman.
 
-1- Projeyi çalıştırmak için bir IDE indirmeniz gerekmektedir.
-Eclipse ve İntellij Idea idelerini kullanabilirsiniz.
+1- You need to download an IDE to run the project.
+You can use Eclipse and Intellij Idea.
 
-2- İdenizi indirdikten sonra ideniz içerisinden dosyayı açın.
+2-After downloading your ide, open the file from inside your ide.
 
-3- pom.xml dosyanızı güncelleyebilirsiniz. 
-Eğer İntellij idea kullanıyorsanız pom.xml dosyasına sağ tıklayıp "add as maven project" seçeneğine tıklayabilirsiniz.
+3-You can update your pom.xml file.
+If you are using Intellij idea, you can right click the pom.xml file and click "add as maven project".
 
-4- PostgreSQL ayarlarımız için resource içerisinden application.properties ı açıp.
-Buradan çalışmak istediğiniz portu ve pgadmin ayarlarınızı girebilirsiniz.
-password kısmına dikkat ediniz!! Bu alana kendi pgadmin şifrenizi yazınız.
+4-For our PostgreSQL settings, open application.properties from the resource.
+Here you can enter the port you want to work with and your pgadmin settings.
+Pay attention to the password part!! Type your own pgadmin password in this field.
 
-5- pgadmin içerisine veri tabanı isminizi giriniz (jdbc:postgresql://localhost:5432/enocaChallange)
-/enocaChallange olarak belirtmiştim.
+5-Enter your database name in pgadmin (jdbc:postgresql://localhost:5432/enocaChallange)
+I specified it as /enocaChallange.
 
-6. Veri tabanını oluşturduktan sonra projeyi çalıştırmak için idemize girelim ve ide içerisinden "EnocaApplication" u çalıştıralım.
-
-Proje kullanıma hazırdık gerekli end pointler, controllerlarda verilmiştir.
+6-After creating the database, let's enter our ide to run the project and run "EnocaApplication" from within the ide.
 
 
-SWAGGER DESTEĞİ YOKTUR. İsteklerinizi POSTMAN üzerinden gönderebilirsiniz.
+The project was ready to use, the necessary end points were given in the controllers.
 
 
 
---Swager üzerinden göndermek istiyorsanız lütfen aşağıdaki adımları takip ediniz.
+NO SWAGGER SUPPORT. You can send your requests via POSTMAN.
 
-1- pom.xml dosyasını açınız.
-2- <dependencies>
-</dependencies> satırların arasına 
+
+
+--If you want to send via Swager, please follow the steps below.
+
+1- Open the pom.xml file.
+2-<dependencies>
+</dependencies> between lines
 <dependency>
-            <groupId>org.springdoc</groupId>
-            <artifactId>springdoc-openapi-ui</artifactId>
-            <version>1.6.11</version>
+             <groupId>org.springdoc</groupId>
+             <artifactId>springdoc-openapi-ui</artifactId>
+             <version>1.6.11</version>
 </dependency>
 
-ekleyiniz.
+please add.
 
 
-3- pom.xml dosyanızı güncelleyiniz ve internet tarayıcınızdan "http://localhost:8080/swagger-ui.html" yazarak swagger desteğine erişmiş olacaksınız.
+3- Update your pom.xml file and you will have access to swagger support by typing "http://localhost:8080/swagger-ui.html" in your internet browser.
 
-
-*Bu dosya 01/17/2023 tarihinde hazırlanmıştır. Lütfen güncel swagger dependency ini kullanınız.
-
+*This file was prepared on 01/17/2023. Please use the current swagger dependency.
