@@ -1,0 +1,45 @@
+Gereklilikler :PostgreSQL, Postman.
+
+1- Projeyi çalıştırmak için bir IDE indirmeniz gerekmektedir.
+Eclipse ve İntellij Idea idelerini kullanabilirsiniz.
+
+2- İdenizi indirdikten sonra ideniz içerisinden dosyayı açın.
+
+3- pom.xml dosyanızı güncelleyebilirsiniz. 
+Eğer İntellij idea kullanıyorsanız pom.xml dosyasına sağ tıklayıp "add as maven project" seçeneğine tıklayabilirsiniz.
+
+4- PostgreSQL ayarlarımız için resource içerisinden application.properties ı açıp.
+Buradan çalışmak istediğiniz portu ve pgadmin ayarlarınızı girebilirsiniz.
+password kısmına dikkat ediniz!! Bu alana kendi pgadmin şifrenizi yazınız.
+
+5- pgadmin içerisine veri tabanı isminizi giriniz (jdbc:postgresql://localhost:5432/enocaChallange)
+/enocaChallange olarak belirtmiştim.
+
+6. Veri tabanını oluşturduktan sonra projeyi çalıştırmak için idemize girelim ve ide içerisinden "EnocaApplication" u çalıştıralım.
+
+Proje kullanıma hazırdık gerekli end pointler, controllerlarda verilmiştir.
+
+
+SWAGGER DESTEĞİ YOKTUR. İsteklerinizi POSTMAN üzerinden gönderebilirsiniz.
+
+
+
+--Swager üzerinden göndermek istiyorsanız lütfen aşağıdaki adımları takip ediniz.
+
+1- pom.xml dosyasını açınız.
+2- <dependencies>
+</dependencies> satırların arasına 
+<dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.6.11</version>
+</dependency>
+
+ekleyiniz.
+
+
+3- pom.xml dosyanızı güncelleyiniz ve internet tarayıcınızdan "http://localhost:8080/swagger-ui.html" yazarak swagger desteğine erişmiş olacaksınız.
+
+
+*Bu dosya 01/17/2023 tarihinde hazırlanmıştır. Lütfen güncel swagger dependency ini kullanınız.
+
