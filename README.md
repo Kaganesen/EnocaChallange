@@ -5,7 +5,7 @@ This task is prepared for Enoca Technology. It is a task with employee and compa
 Tools: **Java Spring-Hibernate-ORM-Maven-Spring Boot-AOP-DTO-JPA-RestAPI-JSON-PostgreSQL**
 
 Bu task Enoca Teknoloji için hazırlanmıştır. Çalışanın,şirketin ve crud metotlarının olduğu bir görevdir. 
-Araçlar: **Java Spring-Hibernate-ORM-Maven-Spring Boot-AOP-DTO-JPA-RestAPI-JSON-PostgreSQL**```
+Araçlar: **Java Spring-Hibernate-ORM-Maven-Spring Boot-AOP-DTO-JPA-RestAPI-JSON-PostgreSQL**
 
 
 
