@@ -16,9 +16,9 @@ Araçlar: **Java Spring-Hibernate-ORM-Maven-Spring Boot-AOP-DTO-JPA-RestAPI-JSON
 
 ## Click for Postman Collection: <a href="https://github.com/Kaganesen/EnocaChallange/blob/master/PostmanCollections/EnocaChallange.postman_collection.json">POSTMAN COLLECTION</a>
 
-
-
-![image](https://user-images.githubusercontent.com/101461108/189402324-d77deef2-681f-47a0-a0bd-fc1707de0db7.png)
+<p align="center">
+  <img src="https://st2.depositphotos.com/2704315/6490/v/600/depositphotos_64907687-stock-illustration-vector-business-illustration.jpg" alt="sales">
+ </p>
 
 
 ---
@@ -32,7 +32,7 @@ Araçlar: **Java Spring-Hibernate-ORM-Maven-Spring Boot-AOP-DTO-JPA-RestAPI-JSON
                            
     
 
------
+---
 
   
 ## `Language and Tools` 
