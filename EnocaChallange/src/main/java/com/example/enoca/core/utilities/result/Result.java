@@ -1,11 +1,9 @@
 package com.example.enoca.core.utilities.result;
 
-
 public class Result {
 
     private final boolean success;
     private String message;
-
 
     public Result(boolean success) {
         this.success = success;
@@ -16,7 +14,6 @@ public class Result {
         this.message = message;
     }
 
-
     public boolean isSuccess() {
         return this.success;
     }
@@ -24,6 +21,4 @@ public class Result {
     public String getMessage() {
         return this.message;
     }
-
-
 }

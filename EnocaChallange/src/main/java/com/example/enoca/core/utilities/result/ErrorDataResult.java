@@ -2,25 +2,20 @@ package com.example.enoca.core.utilities.result;
 
 public class ErrorDataResult<T> extends DataResult<T> {
 
-    public ErrorDataResult(T data) {
-        super(data, false);
+    public ErrorDataResult() {
+        super(false, null);
     }
 
-    public ErrorDataResult() {
-        super(null, false);
-
+    public ErrorDataResult(T data) {
+        super(false, data);
     }
 
     public ErrorDataResult(String message) {
-        super(null, false, message);
+        super(false, null, message);
     }
-
 
     public ErrorDataResult(T data, String message) {
-        super(data, false, message);
-
-
+        super(false, data, message);
     }
-
 
 }

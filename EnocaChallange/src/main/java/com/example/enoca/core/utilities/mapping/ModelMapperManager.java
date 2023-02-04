@@ -10,8 +10,6 @@ import org.springframework.stereotype.Service;
 public class ModelMapperManager implements ModelMapperService {
 
     private ModelMapper modelMapper;
-
-
     @Override
     public ModelMapper forRequest() {
         modelMapper.getConfiguration()
@@ -25,5 +23,4 @@ public class ModelMapperManager implements ModelMapperService {
                 .setAmbiguityIgnored(true).setMatchingStrategy(MatchingStrategies.STANDARD);
         return modelMapper;
     }
-
 }

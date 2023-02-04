@@ -5,10 +5,10 @@ import com.example.enoca.business.requests.companyRequests.CreateCompanyRequest;
 import com.example.enoca.business.requests.companyRequests.UpdateCompanyRequest;
 import com.example.enoca.business.responses.companyResponses.*;
 import com.example.enoca.core.utilities.result.DataResult;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController

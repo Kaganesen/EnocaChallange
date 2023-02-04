@@ -74,7 +74,7 @@ public class EmployeeManager implements EmployeeService {
 
     private void checkIfExistById(int employeeId){
         if (!this.employeeRepository.existsById(employeeId)){
-            throw new BusinessException(BusinessMessage.GlobalMessages.ID_NOT_FOUND+employeeId);
+            throw new BusinessException("ad" + employeeId);
         }
     }
 

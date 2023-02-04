@@ -66,15 +66,16 @@ public class CompanyManager implements CompanyService {
 
     @Override
     public DataResult<List<GetAllCompanyResponse>> getAll() {
+
         List<Company> companies = this.companyRepository.findAll();
         List<GetAllCompanyResponse> getAllCompanyResponses = companies.stream().map(company -> this.modelMapperService.forResponse().map(company, GetAllCompanyResponse.class)).collect(Collectors.toList());
-
         return new SuccessDataResult<>(getAllCompanyResponses, BusinessMessage.GlobalMessages.DATA_LISTED_SUCCESSFULLY);
+
     }
 
     private void checkIfExistsById(int companyId) {
         if (!this.companyRepository.existsById(companyId)) {
-            throw new BusinessException(BusinessMessage.GlobalMessages.ID_NOT_FOUND+companyId);
+            throw new BusinessException("ada" + companyId);
         }
     }
 }
